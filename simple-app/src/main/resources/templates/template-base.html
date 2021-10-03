@@ -1,0 +1,21 @@
+<html th:fragment="layout (title, content)" xmlns:th="http://www.thymeleaf.org">
+	<head>
+        <title th:replace="${title}">Layout title</title>
+	</head>
+	<body>
+	    <div id="layout-jumbotron" class="layout container-fluid">
+	        <!-- header th:replace="${header}">
+            	<p>Layout header</p>
+	        </header -->
+	        <h1>titolo</h1>
+	        
+	        <div role="main" class="page" th:replace="${content}">
+            	<p>Layout content</p>
+	        </div>
+	
+	        <!-- footer id="footer" class="bg-dark" th:replace="${content}">
+            	<p>Layout footer</p>
+	        </footer -->
+	    </div>
+	</body>
+</html>
